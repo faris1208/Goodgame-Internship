@@ -1,0 +1,133 @@
+.app {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.game-search{
+
+    input{
+        padding: 8px;
+        font-size: 16px;
+        width: 300px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+}
+
+.pokemon-list {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 30px 20px;
+  margin-top: 50px;
+  // padding: 20px;
+
+  .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    // height: 100%;
+
+    .pokemon-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+     
+    }
+
+    p {
+      color: #000;
+      font-size: 18px;
+      word-break: break-word;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+}
+
+.load-more {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .load-more button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .load-more p {
+    font-size: 16px;
+    color: #888;
+  }
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+
+    .app {
+        width: 100%;
+        // text-align: center;
+        // font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        padding: 20px;
+
+        h1{
+            text-align: center;
+            font-weight: bolder;
+        }
+      }
+      
+      .pokemon-list {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 30px 20px;
+        margin-top: 50px;
+        // padding: 20px;
+      }
+      
+  }
+
+  @media (min-width:1024px) {
+    .app {
+        width: 100%;
+        // text-align: center;
+        // font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        padding: 20px;
+
+        h1{
+            text-align: center;
+            font-weight: bolder;
+        }
+      }
+      
+      .pokemon-list {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 30px 20px;
+        margin-top: 50px;
+        // padding: 20px;
+      }
+      
+}
+  
